@@ -1,0 +1,43 @@
+#projects {
+  width: min(104rem, calc(100% - 8rem));
+  margin-inline: auto;
+  padding: 7.2rem 0 14.4rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 0.8rem;
+  }
+
+  h1 {
+    margin-bottom: 5.6rem;
+  }
+
+  .projects-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2.4rem;
+
+    li {
+      min-height: 28rem;
+      padding: 1.2rem;
+      text-align: left;
+      background-color: var(--gray-300);
+      border: 0.2rem solid var(--gray-300);
+      border-radius: 1.2rem;
+      transition: 0.3s ease-out;
+
+      &:hover {
+        border-color: var(--gray-400);
+      }
+
+      img {
+        margin-bottom: 2rem;
+        border-radius: 0.8rem;
+      }
+
+      h3 {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}

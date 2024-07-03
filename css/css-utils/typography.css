@@ -1,0 +1,58 @@
+:root {
+  font-size: 62.5%;
+
+  /* Font Families */
+  --ff-asap: 'Asap', sans-serif;
+  --ff-inconsolata: 'Inconsolata', monospace;
+  --ff-maven-pro: 'Maven Pro', sans-serif;
+
+  /* Titles */
+  --title-lg: 700 5.6rem/120% var(--ff-asap);
+  --title-md: 700 2.4rem/120% var(--ff-asap);
+  --title-sm: 700 1.6rem/120% var(--ff-asap);
+  --subtitle: 400 2rem/120% var(--ff-inconsolata);
+
+  /* Text */
+  --text-md: 400 1.6rem/140% var(--ff-maven-pro);
+  --text-md-500: 500 1.6rem/140% var(--ff-maven-pro);
+  --text-sm: 400 1.4rem/140% var(--ff-maven-pro);
+}
+
+body {
+  font-family: var(--ff-asap);
+  font-size: 1.6rem;
+}
+
+.title-lg {
+  font: var(--title-lg);
+}
+
+.title-md {
+  font: var(--title-md);
+}
+
+.title-sm {
+  font: var(--title-sm);
+}
+
+.subtitle {
+  font: var(--subtitle);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-md-500 {
+  font: var(--text-md-500);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --title-lg: 700 3.6rem/120% var(--ff-asap);
+  }
+}
